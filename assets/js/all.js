@@ -29,7 +29,6 @@ var vIcon = document.querySelector('.viewIcon');
 var vfooter = document.querySelector('.viewFooter');
 vBtn.addEventListener('click', function (e) {
   e.preventDefault();
-  console.log(e.target.nodeName);
 
   if (vIcon.textContent === "keyboard_arrow_down") {
     vfooter.classList.replace('d-none', 'd-flex');
@@ -38,5 +37,14 @@ vBtn.addEventListener('click', function (e) {
     vfooter.classList.replace('d-flex', 'd-none');
     vIcon.textContent = "keyboard_arrow_down";
   }
-});
+}); // vBtn.addEventListener('click',function(e){
+//   e.preventDefault()
+// if(vIcon.textContent === "keyboard_arrow_up" ){
+//   vfooter.classList.replace('d-none','d-flex')
+//   vIcon.textContent= "keyboard_arrow_";
+// }else{
+//   vfooter.classList.replace('d-flex','d-none')
+//   vIcon.textContent= "keyboard_arrow_down";
+// }
+// })
 //# sourceMappingURL=all.js.map
